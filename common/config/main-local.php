@@ -1,6 +1,6 @@
 <?php
 
-if ($_SERVER['SERVER_NAME'] == "https://warm-everglades-37023.herokuapp.com/") {
+if ($_SERVER['SERVER_NAME'] == "https://fast-depths-93211.herokuapp.com/") {
 
     $CLEARDB_DATABASE_URL = "mysql://bff799ef47fc17:e90ac439@us-cdbr-iron-east-04.cleardb.net/heroku_047cb044e59f6a5?reconnect=true";
     $url = parse_url(getenv($CLEARDB_DATABASE_URL));
