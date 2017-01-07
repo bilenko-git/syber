@@ -2,7 +2,7 @@
 
 if ($_SERVER['SERVER_NAME'] == "https://warm-everglades-37023.herokuapp.com/") {
 
-    $CLEARDB_DATABASE_URL = "mysql://b0e24ce5747bbd:7527aeb2@us-cdbr-iron-east-04.cleardb.net/heroku_0479a692c27d838?reconnect=true";
+    $CLEARDB_DATABASE_URL = "mysql://bff799ef47fc17:e90ac439@us-cdbr-iron-east-04.cleardb.net/heroku_047cb044e59f6a5?reconnect=true";
     $url = parse_url(getenv($CLEARDB_DATABASE_URL));
 
     print_r($url); 
