@@ -1,15 +1,10 @@
 <?php
 
 if ($_SERVER['SERVER_NAME'] == "https://fast-depths-93211.herokuapp.com/") {
-
-    $CLEARDB_DATABASE_URL = "mysql://bff799ef47fc17:e90ac439@us-cdbr-iron-east-04.cleardb.net/heroku_047cb044e59f6a5?reconnect=true";
-    $url = parse_url(getenv($CLEARDB_DATABASE_URL));
-
-    print_r($url); 
-    $host = $url["host"];
-    $username = $url["user"];
-    $password = $url["pass"];
-    $dbname = substr($url["path"], 1);
+    $host = 'us-cdbr-iron-east-04.cleardb.net';
+    $username = 'bff799ef47fc17';
+    $password = 'e90ac439';
+    $dbname = 'heroku_047cb044e59f6a5';
 } else {
     $host = 'localhost';
     $dbname = 'tenders';
