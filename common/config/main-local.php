@@ -1,6 +1,5 @@
 <?php
 
-print_r($_SERVER['SERVER_NAME']);
 if ($_SERVER['SERVER_NAME'] == "fast-depths-93211.herokuapp.com") {
     $host = 'us-cdbr-iron-east-04.cleardb.net';
     $username = 'bff799ef47fc17';
@@ -17,7 +16,7 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host='.$hose.';dbname='.$dbname,
+            'dsn' => 'mysql:host='.$host.';dbname='.$dbname,
             'username' => $username,
             'password' => $password,
             'charset' => 'utf8',
