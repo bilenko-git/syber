@@ -1,6 +1,7 @@
 <?php
 
-if ($_SERVER['SERVER_NAME'] == "https://fast-depths-93211.herokuapp.com/") {
+print_r($_SERVER['SERVER_NAME']);
+if ($_SERVER['SERVER_NAME'] == "fast-depths-93211.herokuapp.com") {
     $host = 'us-cdbr-iron-east-04.cleardb.net';
     $username = 'bff799ef47fc17';
     $password = 'e90ac439';
