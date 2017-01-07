@@ -63,6 +63,17 @@ AppAsset::register($this);
     ?>
 
     <div class="my-container">
+
+        <?
+                $CLEARDB_DATABASE_URL = "mysql://bff799ef47fc17:e90ac439@us-cdbr-iron-east-04.cleardb.net/heroku_047cb044e59f6a5?reconnect=true";
+    $url = parse_url(getenv($CLEARDB_DATABASE_URL));
+
+    print_r($url); 
+    $host = $url["host"];
+    $username = $url["user"];
+    $password = $url["pass"];
+    $dbname = substr($url["path"], 1);
+        ?>
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
