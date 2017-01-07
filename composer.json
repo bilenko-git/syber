@@ -28,7 +28,8 @@
         "bower-asset/angular-material-icons": "*",
         "bower-asset/ngStorage": "* ",
         "fedemotta/yii2-widget-datatables": "*",
-        "trntv/yii2-datetime-widget": "*"
+        "trntv/yii2-datetime-widget": "*",
+        "ext-mysql": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
