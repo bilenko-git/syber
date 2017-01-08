@@ -1,15 +1,15 @@
 <?php
 
-if ($_SERVER['SERVER_NAME'] == "fast-depths-93211.herokuapp.com") {
-    $host = 'us-cdbr-iron-east-04.cleardb.net';
-    $username = 'bff799ef47fc17';
-    $password = 'e90ac439';
-    $dbname = 'heroku_047cb044e59f6a5';
-} else {
+if ($_SERVER['SERVER_NAME'] == "syber.com") {
     $host = 'localhost';
     $dbname = 'tenders';
     $username = 'root';
     $password = '1';
+} else {
+    $host = 'us-cdbr-iron-east-04.cleardb.net';
+    $username = 'bff799ef47fc17';
+    $password = 'e90ac439';
+    $dbname = 'heroku_047cb044e59f6a5';
 }
 
 return [
